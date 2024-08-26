@@ -50,6 +50,7 @@ def fill_black(I_rot, I_med):
     
     return Y
 
+#-----NOTA------: Correr desde la carpeta Parte 1 para que funcione correctamente
 I = cv2.imread('Images//barbara.jpg')
 if I is None:
     print("Error: Image not found or unable to load.")

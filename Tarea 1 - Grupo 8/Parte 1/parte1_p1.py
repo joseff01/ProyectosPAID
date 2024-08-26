@@ -55,7 +55,7 @@ def mediana(I):
 
 
 #Test de funcionamiento
-
+#-----NOTA------: Correr desde la carpeta Parte 1 para que funcione correctamente
 
 I = cv2.imread('Images//imagen1.jpg')
 if I is None:
