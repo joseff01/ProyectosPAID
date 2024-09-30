@@ -86,7 +86,7 @@ kernel = [0.073235, 0.176765, 0.073235;
           0.073235, 0.176765, 0.073235];
 
 
-num_i = 2500;
+num_i = 1000;
 % Create a copy of the image for inpainting
 I1_iter = I1_sin_masks;
 I2_iter = I2_sin_masks;
