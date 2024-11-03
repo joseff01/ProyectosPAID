@@ -1,5 +1,5 @@
 pkg load image
-
+pkg load signal
 
 function B = dct2_custom(A)
 
@@ -84,4 +84,6 @@ extracted_watermark = (Se - S) / alpha;
 
 
 figure; imshow(uint8(extracted_watermark), []); title('Marca de Agua Extraída');
+difference_image = abs(double(watermarked_image) - double(original_image));
+figure; imshow(difference_image, []); title('Diferencia entre Imagen Original y Marcada');
 
