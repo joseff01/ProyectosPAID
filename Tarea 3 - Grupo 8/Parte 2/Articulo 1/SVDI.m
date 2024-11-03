@@ -44,9 +44,7 @@ for k = 1:length(image_names)
     disp(['SSIM entre imOrig y ', image_names{k}, ': ', num2str(ssim_value)]);
 
     % Calcular HQI basado en histogramas
-    hist_orig = imhist(original);
-    hist_mod = imhist(modified);
-    hqi_value = sum((sqrt(hist_orig) - sqrt(hist_mod)).^2);
+    hqi_value = hqi(original, modified);
     hqi_results = [hqi_results; hqi_value];
     disp(['HQI entre imOrig y ', image_names{k}, ': ', num2str(hqi_value)]);
 endfor
